@@ -67,8 +67,8 @@ for (let box of boxes) {
       step % 2 === 0
         ? (box.innerHTML = createTic())
         : (box.innerHTML = createTac());
-      step++;
       step < 9 ? gameResult() : calculateResult('Draw!');
+      step++;
       prevStep = box;
     }
   });
